@@ -1,0 +1,594 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+margin-left: -8px;
+margin-right: -8px;
+
+
+}
+
+
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-name, .col-email, .col-message {
+    font-size: 15px;
+    padding: 10px 0px 10px 3px;
+    border:1px solid #ccc;
+}
+
+/* .col .col-full {
+    font-size: 15px;
+    margin-left: 0px;
+} */
+
+.col .col-input-bottom .col-message {
+    margin-top: 10px;
+    width: 100%;
+    
+    
+}
+
+.col .col-input-top {
+    width:110%;
+    display: contents;
+}
+
+.send-input {
+    float: right;
+    margin: 16px 0;
+    font-size: 20px;
+    padding: 11px 12px;
+    background-color: black;
+    color: white;
+    border: 0px solid #000;
+}
+
+.send-input:hover {
+    background-color: #ccc;
+    color: black;
+    cursor:pointer;
+}
+
+.clear {
+    clear:both;
+}
+
+.text-white {
+
+    color:white !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:Tahoma;
+}
+
+
+
+#main {
+
+}
+
+#header {
+  height: 46px;
+  position: fixed;
+  background-color: pink;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 1;
+}
+#nav {
+   display: inline-block;
+}
+
+#nav .subnav {
+    top:100%;
+    left:0;
+    min-width: 160px;
+    display: none; 
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+#nav .subnav a {
+    color: black;
+    padding: 0 10px;
+    
+
+}
+
+#nav .iconadd {
+    font-size: 14px;
+}
+
+#header .seach-btn {
+line-height: 46px;
+float: right;
+padding: 0 21px;
+}
+
+#header .search-icon {
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#header .seach-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+    
+    
+}
+
+#nav > li {
+    display: inline-block;
+    
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li {
+    
+    position: relative;
+    
+}
+#nav > li > a {
+    color:white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: block;
+    
+    text-decoration: none;
+    line-height: 46px;
+    font-size: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#nav li a:hover {
+    color:black;
+    background-color: grey;
+}
+
+#slider {
+position: relative;
+margin-top: 46px;
+padding-top: 50%;
+
+background: url('https://www.w3schools.com/w3images/la.jpg') top center / cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    /* color: white */
+    width: 100%;
+    text-align: center;
+    bottom: 47px;
+}
+
+#slider .text-heading {
+    font-size: 25px;
+}
+
+#slider .text-description {
+    font-size: 20px;
+}
+
+
+
+#content .content-section {
+    max-width: 800px;
+    padding: 64px 0 112px; 
+    margin-left: auto;
+    margin-right: auto;
+     
+}
+
+#content .section-heading {
+text-align: center;
+font-size: 30px;
+font-weight: 200;
+letter-spacing: 4px;
+text-transform: uppercase;
+
+}
+
+#content .section-sub-heading {
+text-align: center;
+font-size: 15px;
+margin-top:25px;
+font-style: italic;
+opacity: 0.5;
+
+}
+
+#content .text-content {
+margin-top: 25px;
+font-size: 15px;
+text-align: justify;
+line-height: 1.6;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    
+}
+#content .member-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#content .member-img {
+    width:154px;
+    border-radius: 4px;
+}
+
+
+/*tour section*/
+.tour-section {
+    background-color: black;
+    
+
+}
+
+.ticket-list {
+    background-color: white;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.ticket-list li {
+color: #757575;
+font-size:15px;
+padding: 11px 16px;
+border-bottom: solid 0.5px black;
+
+}
+
+.ticket-list .soldout {
+background-color: #f44336;
+color: white;
+padding:3px 5px;
+margin-left: 16px;
+
+}
+
+.ticket-list .quantity {
+float: right;
+color:white;
+background-color: #000;
+border-radius: 50%;
+width:22px;
+height:22px;
+text-align: center;
+line-height: 22px;
+margin-top: -2px;
+}
+
+/*Places*/
+
+.place-list {
+/* margin-top:32px; */
+/* margin-bottom: 48px; */
+
+
+}
+
+.col-half {
+    width:50%;
+    padding-right: 3px;
+    
+}
+/* .col-full {
+    width:100%;
+    
+} */
+
+
+
+
+.col-third {
+margin-top: 48px;
+
+width:33.33333%;
+
+
+}
+
+.place-img {
+width:100%;
+display: block;
+height:170px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px ;
+transition: ease 0.5s;
+
+}
+
+.place-img:hover {
+    /* opacity:0.6; */
+     transform: scale(1.5); 
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.place-body {
+background-color: white;
+padding: 16px;
+font-size: 15px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+
+}
+
+.place-heading {
+font-size: 15px;
+font-weight: 700;
+margin-top: 15px;
+}
+
+.place-time {
+margin-top:15px;
+opacity:0.6;
+}
+
+.place-desc {
+margin-top:15px;
+line-height: 1.4;
+}
+
+.place-buy-btn {
+color:white;
+background-color: pink;
+text-decoration: none;
+padding: 11px 25px;
+display: inline-block;
+margin-top: 15px;
+font-weight: 200;
+text-transform: uppercase;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color:black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+#footer {
+
+}
+
+
+.modal {
+    display:none;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    
+    align-items: center;
+    justify-content: center;
+}
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 40px);
+    animation: modal-Fadein ease 0.6s;
+    
+}
+
+.modal-header {
+    height: 130px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.header-icon {
+    margin-right: 13px;
+}
+
+.ti-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 13px 16px;
+    color: #fff;
+    opacity: 0.8;
+    
+}
+
+.ti-close:hover {
+    background-color: #f44336;
+    cursor: pointer;
+    opacity: 2;
+    
+}
+
+.modal-body {
+    padding: 20px;
+}
+.modal-label {
+    display: block;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding:10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.modal-label {
+    margin-bottom: 12px;
+    
+}
+#pay-btn {
+    color: #fff;
+    font-size: 17px;
+    padding: 18px;
+    width: 100%;
+    background: pink;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+#pay-btn:hover {
+    
+    ;
+    color: black;
+}
+ .modal-footer{
+    margin: 15px 15px;
+    float: right;
+    
+}
+
+.modal-footer a {
+    color:#2196F3;
+}
+
+/* contact */
+.contact-content {
+    margin-top: 48px;
+    /* margin-bottom: 48px; */
+    
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.45;
+}
+.contact-info i[class*=ti-] {
+    width:30px;
+    display: inline-block;
+    
+}
+
+.contact-form .row {
+    font-size: 15px;
+
+}
+.contact-form .form-control {
+    border:1px solid pink;
+    padding:12px;
+    width:100%;
+}
+
+.contact-form .form-submit-btn {
+    float:right;
+    
+
+}
+#footer {
+    width:100%;
+    padding:64px;
+    text-align: center;
+}
+#footer .social-list {
+    font-size: 28px;
+    
+    
+}
+#footer .social-list a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.6);
+    cursor: default;
+}
+#footer .social-list a:hover {
+    opacity: 0.6;
+}
+#footer .copyright {
+    margin:15px;
+    font-size: 15px;
+    color: black;
+    opacity: 0.6;
+}
+#footer .copyright a {
+    color: black;
+    opacity: 0.6;
+}
+
+#footer .map-location {
+    filter: grayscale(50%);
+    float:left;
+    width: 100%;
+    margin: 20px 0 20px 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+@keyframes modal-Fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
